@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API Testing</title>
+</head>
+<body>
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+	<h1>Api Test</h1>
+	<p>MixCloud API</p>
+	<!-- https://www.mixcloud.com/developers/ -->
+
+	<p>Spotify API</p>
+	<!-- https://developer.spotify.com/web-api/user-guide/ -->
+	<script type="text/javascript">
+		// Make API Call 
+
+		var queryURL = "https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6/albums?album_type=SINGLE&offset=20&limit=10";
+		// var queryURL = "https://p.scdn.co/mp3-preview/1517f8f4272b318b86af98e996fb2e844d366a1c?cid=null";
+		$.ajax({
+			url: queryURL,
+			method: 'GET'
+		}).done(function(response){ 
+			console.log(response.items);
+		});
+
+
+
+	</script>
+</body>
+</html>

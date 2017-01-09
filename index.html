@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!-- Link jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js"></script> 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+   <!-- Optional theme -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+ <script type="text/javascript" src="assets/javascript/muscle.js"></script>
+
+	<title>Musing</title>
+</head>
+<body>
+
+ <div class="jumbotron" style="background-color:#83a4d4">
+      <!-- centered text -->
+	    <h1 class="text-center" style="background-color:#b6fbff"><strong>Musing</strong></h1> 
+		  <h2 class="text-center">Your Musical Therapist</h2>
+	  </div>
+
+	  <!-- User fills out form, entering emotions -->
+	  <!-- Clicking "Explore" causes articles, audio and visual content to pop up to give user info about current mood: psycho analytical-->
+	  <!-- Clicking "Muse" populates audio and vido content (YouTube, Music sources) -->
+
+<form>
+  <!-- <div class="form-group"> -->
+  <div class="col-lg-6">
+    <label for="formGroupExampleInput">I Feel:</label>
+    <input type="text" class="form-control" id="iFeel" placeholder="sad">
+     <span class="input-group-btn">
+        <button class="btn btn-default" id="nowfeels" type="button" >
+		<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+         Explore
+        </button>
+      </span>
+   </div>
+  <div class="col-lg-6">
+    <label for="formGroupExampleInput">I Want to Feel:</label>
+    <input type="text" class="form-control" id="iwFeel" placeholder="happy">
+     <span class="input-group-btn">
+        <button class="btn btn-default" id="laterfeels" type="button" >
+        <span class="glyphicon glyphicon-music" aria-hidden="true"></span> Muse</button>
+      </span>
+   </div>
+
+</form>
+
+</body>
+</html>
