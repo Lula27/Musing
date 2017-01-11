@@ -23,6 +23,38 @@ $(document).ready(function() {
 
 		console.log(lFeels); 
 
+
+
+		function callSpotify(url, data) {
+    return $.ajax(url, {
+        dataType: 'json',
+        data: data,
+        headers: {
+            'Authorization': 'Bearer ' + credentials.token
+        }
+    });
+}
+
+
+
+var url = 'https://embed.spotify.com/?uri='; 
+var uri = 
+
+console.log(url);
+
+$('<iframe>', {
+   src: url + uri,
+   frameborder: 0,
+   width: '300',
+   height: '380',
+   allowtransparency: 'true'
+   }).appendTo('#output');
+
+
+
 	})	
+
+
+
 
 });
