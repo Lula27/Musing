@@ -38,7 +38,7 @@ $(document).ready(function() {
 
 
 var url = 'https://embed.spotify.com/?uri='; 
-var uri = 
+var uri = 'https://spotify-mood-playlist.herokuapp.com/'; 
 
 console.log(url);
 
