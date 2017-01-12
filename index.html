@@ -14,6 +14,19 @@
     <!-- Latest compiled and minified JavaScript -->
  <script type="text/javascript" src="assets/javascript/muscle.js"></script>
 
+ <!-- Automated list options generator -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+ 
+ <script>
+  
+   $(document).ready(function() {
+     $(".select2").select2();
+   });
+ </script>
+
+
 	<title>Musing</title>
 </head>
 <body>
@@ -54,9 +67,30 @@
 
 </form>
 
+ 
+  <!-- <div class="form-group"> -->
+  <div class="col-lg-6" id="list">
+    <label for="formGroupExampleInput">Mental Illness Resources:</label>
+    <select name=""  class="select2">
+      <option id="overview">  Young Adult Mental Health </option>
+      <option value="one">  Depression </option>
+      <option value="two">  Anxiety Disorders  </option>
+      <option value="three">  Panic Disorder </option>
+      <option value="four">  Postpartum Depression  </option>
+      <option value="five">  Social Anxiety Phobia  </option>
+      <option value="six">  Bulimia Nervosa</option>
+      <option value="seven">  Acute Stress Disorder </option>
+      <option value="eight">  Antisocial Personality Disorder </option>
+      <option value="nine ">  Borderline Personality Disorder  </option>
+      <option value="ten"> Paranoid Personality Disorder </option>
+    </select>
   </div>
-  <!-- Output -->
+
+  <!-- Spotify iframe -->
 <div id="output"></div>
+
+<!-- YouTube iframe -->
+<div id="player"></div>
 
 
 </body>
