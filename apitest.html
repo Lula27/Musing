@@ -16,20 +16,16 @@
 	<p>MixCloud API</p>
 	<!-- https://www.mixcloud.com/developers/ -->
 
-	<p>Spotify API</p>
-	<!-- https://developer.spotify.com/web-api/user-guide/ -->
-	<script type="text/javascript">
-		// Make API Call 
-
-		var queryURL = "https://api.spotify.com/v1/artists/1vCWHaC5f2uS3yhpwWbIA6/albums?album_type=SINGLE&offset=20&limit=10";
-		// var queryURL = "https://p.scdn.co/mp3-preview/1517f8f4272b318b86af98e996fb2e844d366a1c?cid=null";
-		$.ajax({
-			url: queryURL,
-			method: 'GET'
-		}).done(function(response){ 
-			console.log(response.items);
-		});
-
+	<p>SoundCloud API</p>
+	<!--https://developers.soundcloud.com/docs/api/sdks#javascript -->
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+	<script>
+  SC.initialize({
+    client_id: 'YOUR_CLIENT_ID',
+    redirect_uri: 'http://example.com/callback'
+  });
+</script>
+	
 
 
 	</script>
